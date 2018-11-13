@@ -1,5 +1,7 @@
-<form action="<%= cats_url %>" method="post">
-  <label>
+<%= render 'form', cat: @cat, action: :new %>
+
+<%# <form action="<%= cats_url %>
+  <!-- <label>
     Name:
     <input type="text" name="cat[name]" value="">
   </label>
@@ -12,20 +14,24 @@
   <label>
     color:
     <select name="cat[color]">
-      <% Cat.colors.each do |color| %>
-      <option value="color"><%= color %></option>
-      <% end %>
+      <option disabled selected>-- select a color--</option>
+      <%# Cat.colors.each do |color| %>
+      <option value="<%#= color %>"><%#= color %></option>
+      <%# end %>
     </select>
   </label>
   <br>
   <label>
-    Name:
-    <input type="text" name="cat[name]" value="">
+    Sex:
+    <input type="radio" name="cat[sex]" value="M">M</input>
+    <input type="radio" name="cat[sex]" value="F">F</input>
   </label>
   <br>
   <label>
-    Name:
-    <input type="text" name="cat[name]" value="">
+    Description:
+    <br>
+    <textarea name="cat[description]" rows="8" cols="80"></textarea>
   </label>
   <br>
-</form>
+  <input type="submit" name="" value="Birth a cat">
+</form> -->
