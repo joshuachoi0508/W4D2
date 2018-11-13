@@ -1,0 +1,31 @@
+<form action="<%= cats_url %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="cat[name]" value="">
+  </label>
+  <br>
+  <label>
+    birth_date:
+    <input type="text" name="cat[birth_date]" value="">
+  </label>
+  <br>
+  <label>
+    color:
+    <select name="cat[color]">
+      <% Cat.colors.each do |color| %>
+      <option value="color"><%= color %></option>
+      <% end %>
+    </select>
+  </label>
+  <br>
+  <label>
+    Name:
+    <input type="text" name="cat[name]" value="">
+  </label>
+  <br>
+  <label>
+    Name:
+    <input type="text" name="cat[name]" value="">
+  </label>
+  <br>
+</form>

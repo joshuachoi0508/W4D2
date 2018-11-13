@@ -1,0 +1,35 @@
+<!-- <h1> <%#= @cat.name %> </h1>
+<ul>
+  <li> Name: <%#= @cat.name  %> </li>
+  <li> Birth Day: <%#= @cat.birth_date  %> </li>
+  <li> Sex: <%#= @cat.sex  %> </li>
+  <li> Color: <%#= @cat.color  %> </li>
+  <li> Description: <%#= @cat.description  %> </li>
+</ul> -->
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6"><%= @cat.name  %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Birth date</td>
+      <td><%= @cat.birth_date %></td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td><%= @cat.color %></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td><%= @cat.sex %></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><%= @cat.description %></td>
+    </tr>
+  </tbody>
+</table>
